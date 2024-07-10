@@ -44,21 +44,22 @@ public class OrderSystem {
         }
     }
     public static void main(String[] args) {
+        // Je simule ici l'ajout, la modification et la suppression de commandes sur une interface utilisateur d'ou le francais.
         OrderSystem orderSystem = new OrderSystem();
 
-        orderSystem.addNewOrder(1, "Apple");
-        orderSystem.addNewOrder(1, "Banana");
-        orderSystem.addNewOrder(2, "Orange");
+        orderSystem.addNewOrder(1, "Televison");
+        orderSystem.addNewOrder(1, "Ordinateur");
+        orderSystem.addNewOrder(2, "Ecran");
 
-        System.out.println("Initial Orders:");
+        System.out.println("Commandes initiales :");
         orderSystem.printOrders();
 
-        orderSystem.modifyOrder(1, 1, "Grapes");
-        System.out.println("Orders after modification:");
+        orderSystem.modifyOrder(1, 1, "Ecran plat");
+        System.out.println("Commandes après modification :");
         orderSystem.printOrders();
 
         orderSystem.removeOrder(2, 0);
-        System.out.println("Orders after removal:");
+        System.out.println("Commandes après retrait :");
         orderSystem.printOrders();
     }
 }
