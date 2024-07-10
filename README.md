@@ -36,3 +36,11 @@ En résumé, un code propre est agréable à lire et à travailler. Il respecte 
 - **Principes S.O.L.I.D.** : Respecter les principes de responsabilité unique, ouvert/fermé, substitution de Liskov, ségrégation des interfaces et inversion des dépendances.
 - **Principes DRY, KISS, YAGNI** : Ne pas répéter le code, garder les choses simples, et n'implémenter que ce qui est nécessaire.
 
+### 3. De votre expérience de l’agilité en entreprise, en vous basant sur les piliers du manifeste vu en cours. Que pourriez vous améliorer dans la gestion de vos projets ?
+
+**Réponse :**
+Dans mon entreprise, l'agilité n'est pas vraiment présente. Cependant, durant les différents cours, j'ai pu découvrir les piliers de l'agilité. Je prévois donc une réunion avec les autres développeurs en août pour voir ce que nous pourrions améliorer afin d'adopter une véritable approche agile, qui n'est actuellement présente que de nom.
+
+Nous n'avons pas vraiment cet état d'esprit. Notre infrastructure, typiquement découpée par architecture hexagonale, et nos tests unitaires souffrent de nombreuses régressions lors des MEP ce qui ne devrait pas être le cas. De plus, nous avons des difficultés à maintenir un code propre et lisible.
+
+En effet, le code ne peut pas être considéré comme propre à cause du manque de documentation et de commentaires. Le plus gros problème survient lors de l'arrivée d'un nouveau développeur, il lui est impossible de comprendre le code en le lisant, car tout est tellement spécifique sans réelles informations sur les fonctions et leurs rôles.
