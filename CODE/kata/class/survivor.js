@@ -5,6 +5,7 @@ class Survivor {
         this.orientation = orientation;
         this.health = health;
         this.inventory = [];
+        this.alive = true;
     }
 
     move(direction) {
@@ -30,10 +31,18 @@ class Survivor {
 
     encounterZombie() {
         this.health -= 10;
+        if (this.health <= 0) {
+            this.alive = false;
+        }
     }
 
     isAlive() {
-        return this.health > 0;
+        return this.alive;
+    }
+
+    kill() {
+        this.health = 0;
+        this.alive = false;
     }
 }
 

@@ -21,7 +21,7 @@ function explore(direction) {
     survivor.move(direction);
     if (map.isOutOfBounds(survivor.x, survivor.y)) {
         console.log('You moved out of bounds and died!');
-        survivor.health = 0;
+        survivor.kill();
     } else {
         const position = map.getPosition(survivor.x, survivor.y);
         if (position.type === 'item') {
